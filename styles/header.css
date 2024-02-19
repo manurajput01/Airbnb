@@ -3,6 +3,7 @@
   height: 4.5rem;
   display: flex;
 }
+
 hr{
   border-color:rgb(255, 255, 255);
 }
@@ -45,7 +46,7 @@ hr{
 }
 
 .nav-list :hover{
-  background-color: rgb(240, 235, 235);
+  background-color:  rgb(228, 228, 228);
   border-radius: 1rem;
   padding:  0.3rem 0rem;
 }
@@ -80,7 +81,7 @@ hr{
 }
 
 .airbnb-home-link :hover{
-  background-color: rgb(240, 235, 235);
+  background-color:  rgb(228, 228, 228);
   border-radius: 1rem;
   padding:  0.3rem 0rem;
 }
@@ -92,7 +93,7 @@ hr{
 }
 
 .globe-icon :hover{
-  background-color: rgb(240, 235, 235);
+  background-color: rgb(228, 228, 228);
   border-radius: 2rem;
 }
 .user-login-btn {
@@ -107,7 +108,7 @@ hr{
 }
 
 .user-login-btn:hover{
-  background-color: rgb(240, 235, 235);
+  background-color:  rgb(228, 228, 228);
   border-radius: 2rem;
 }
 
@@ -133,8 +134,8 @@ hr{
   width: 60%;
   height: 75%;
   border-radius: 2.3rem;
-  border: 1px solid rgb(188, 185, 185);
-  box-shadow: 0px 0px 5px rgb(158, 157, 157);
+  border: 1px solid  rgb(228, 228, 228);
+  box-shadow: 0px 0px 5px  rgb(228, 228, 228);
   display: flex;
   align-items: center;
 }
@@ -145,7 +146,7 @@ hr{
 }
 
 .option-item1:hover{
-  background-color: rgb(240, 235, 235);
+  background-color:  rgb(228, 228, 228);
   border-radius: 2rem;
 }
 
@@ -156,14 +157,15 @@ hr{
 
 .search-option-item {
   height: 70%;
-  border-right: 1px solid rgb(188, 185, 185);
+  border-right: 1px solid  rgb(228, 228, 228);
   display: flex;
   flex-direction: column;
-  padding: 0.2rem 1.4rem;  
+  padding: 0rem 1.6rem;  
 }
+
 .search-option-item:hover{
-  background-color: rgb(240, 235, 235);
-  border-radius: 1.5rem;
+  background-color: rgb(228, 228, 228);
+  border-radius: 1.8rem;
 }
 
 .search-option-item label {
@@ -177,7 +179,7 @@ hr{
 .search-option-item span,
 .option-item1 input::placeholder {
   font-size: 15px;
-  color: rgb(130, 130, 130);
+  color:  rgb(71, 66, 66);
 }
 
 .option-item1 {
@@ -191,7 +193,7 @@ hr{
 }
 
 .option-item1 input:hover{
-  background-color: rgb(240, 235, 235);
+  background-color:  rgb(228, 228, 228);
   border-radius: 2rem;
 }
 
