@@ -31,7 +31,6 @@
 .footer-info-2 a.active {
   color: #000000;
   font-weight: bold;
-  cursor: default;
 }
 .footer-info-3 {
   width: 100%;
@@ -55,7 +54,6 @@
   display: inline;
   font-size: 14px;
   opacity: 0.8;
-  cursor: pointer;
 }
 .info-show-more a {
   font-size: 14px;
@@ -119,7 +117,7 @@
 }
 
 .left-side-lower-footer {
-  width: 48%;
+  width: 49%;
   display: flex;
   align-items: center;
   justify-content: end;

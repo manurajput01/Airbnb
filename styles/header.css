@@ -45,17 +45,20 @@ hr{
   text-decoration: none;
 }
 
-.nav-list :hover{
+.nav-item:hover{
   background-color:  rgb(228, 228, 228);
-  border-radius: 1rem;
-  padding:  0.3rem 0rem;
+ 
 }
 
-.nav-list li,
-.nav-list a {
+.nav-item,
+.nav-item a {
+  font-size: 1.07rem;
   color: rgb(137, 135, 135);
   font-size: 1.05rem;
+  text-decoration: none;
   cursor: pointer;
+  border-radius: 1.3rem;
+  padding: 0.5rem 1rem;
 
 }
 
@@ -80,21 +83,21 @@ hr{
   cursor: pointer;
 }
 
-.airbnb-home-link :hover{
+.airbnb-home-link:hover{
   background-color:  rgb(228, 228, 228);
   border-radius: 1rem;
   padding:  0.3rem 0rem;
 }
 
 .globe-icon svg {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   cursor: pointer;
 }
 
-.globe-icon :hover{
+.globe-icon:hover{
   background-color: rgb(228, 228, 228);
-  border-radius: 2rem;
+  border-radius: 50%;
 }
 .user-login-btn {
   background-color: #fff;
@@ -105,6 +108,7 @@ hr{
   align-items: center;
   gap: 0.3rem;
   cursor: pointer;
+  position: relative;
 }
 
 .user-login-btn:hover{
@@ -145,27 +149,34 @@ hr{
   width: 30%;
 }
 
-.option-item1:hover{
-  background-color:  rgb(228, 228, 228);
-  border-radius: 2rem;
-}
 
 .option-item2,
 .option-item3 {
   width: 20%;
 }
 
-.search-option-item {
-  height: 70%;
-  border-right: 1px solid  rgb(228, 228, 228);
+.search-option-item ,.add-guest-block{
+  height: 100%;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   padding: 0rem 1.6rem;  
 }
 
-.search-option-item:hover{
+.search-option-item:hover,
+.search-option-item:hover input{
   background-color: rgb(228, 228, 228);
   border-radius: 1.8rem;
+}
+.search-option-item + .seperator{
+  display: inline-block;
+  width: 1px;
+  height: 30px;
+  background: rgb(228, 228, 228);
+}
+
+.search-option-item:hover + .seperator{
+  visibility: hidden;
 }
 
 .search-option-item label {
@@ -173,13 +184,17 @@ hr{
   font-size: 13px;
   cursor: pointer;
 }
+.search-option-item input{
+  border: 0;
+  outline: 0;
+}
+
 .search-option-item span{
   cursor: pointer;
 }
 .search-option-item span,
 .option-item1 input::placeholder {
   font-size: 15px;
-  color:  rgb(71, 66, 66);
 }
 
 .option-item1 {
@@ -192,37 +207,55 @@ hr{
   outline: none;
 }
 
-.option-item1 input:hover{
+.option-item1:hover{
   background-color:  rgb(228, 228, 228);
   border-radius: 2rem;
 }
 
 .option-item4{
   border-right-style: none;
+  gap: 0rem;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0.2rem  1rem;
+  padding-right: 0.4rem
 }
 
-.add-guest-block {
+.option-item4-child1{
   display: flex;
   flex-direction: column;
 }
 
+ .add-guest-block {
+  display: flex;
+  flex-direction: column;
+
+}
+
 .search-btn {
   background-color: #ff385c;
-  border: none;
-  width: 20%;
-  height: 100%;
+  border: 0;
+  width:50px;
+  height: 50px;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
+  margin-top: 8px;
 }
 
 .search-btn svg {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   fill: #fff;
+}
+
+.signup-modal{
+  width: 100px;
+  height: 100px;
+  background-color: rebeccapurple;
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+.user-login-btn:hover .signup-modal{
+  display: block;
 }
