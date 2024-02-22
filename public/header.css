@@ -1,0 +1,269 @@
+.main-header{
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+.header-strip1 {
+  height: 4.5rem;
+  display: flex;
+}
+
+hr{
+  border-color:rgb(255, 255, 255);
+}
+.header-logo {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo a{
+  width: 40%;
+  height: 50%;
+  object-fit: fill;
+  cursor: pointer;
+}
+
+.header-logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.main-navigation {
+  width: 55%;
+  height: 100%;
+}
+
+.nav-list {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+}
+
+.nav-item:hover{
+  background-color:  rgb(228, 228, 228);
+ 
+}
+
+.nav-item,
+.nav-item a {
+  font-size: 1.07rem;
+  color: rgb(137, 135, 135);
+  font-size: 1.05rem;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 1.3rem;
+  padding: 0.5rem 1rem;
+
+}
+
+.nav-list .active {
+  font-weight: 800;
+  color: #333 !important;
+  cursor: pointer;
+}
+
+.header-strip1-right-block {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.airbnb-home-link a {
+  color: #333;
+  font-weight: 599;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.airbnb-home-link:hover{
+  background-color:  rgb(228, 228, 228);
+  border-radius: 1rem;
+  padding:  0.3rem 0rem;
+}
+
+.globe-icon svg {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.globe-icon:hover{
+  background-color: rgb(228, 228, 228);
+  border-radius: 50%;
+}
+.user-login-btn {
+  background-color: #fff;
+  border: 1px solid rgb(188, 185, 185);
+  border-radius: 2rem;
+  padding: 0.2rem 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.user-login-btn:hover{
+  background-color:  rgb(228, 228, 228);
+  border-radius: 2rem;
+}
+
+.user-login-btn .list-svg {
+  width: 19px;
+  height: 29px;
+}
+
+.user-login-btn .user-svg {
+  width: 38px;
+  height: 38px;
+}
+
+.header-strip2 {
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.search-bar {
+  width: 60%;
+  height: 75%;
+  border-radius: 2.3rem;
+  border: 1px solid  rgb(228, 228, 228);
+  box-shadow: 0px 0px 5px  rgb(228, 228, 228);
+  display: flex;
+  align-items: center;
+}
+
+.option-item1,
+.option-item4 {
+  width: 30%;
+}
+
+
+.option-item2,
+.option-item3 {
+  width: 20%;
+}
+
+.search-option-item ,.add-guest-block{
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 1.6rem;  
+}
+
+.search-option-item:hover,
+.search-option-item:hover input{
+  background-color: rgb(228, 228, 228);
+  border-radius: 1.8rem;
+}
+.search-option-item + .seperator{
+  display: inline-block;
+  width: 1px;
+  height: 30px;
+  background: rgb(228, 228, 228);
+}
+
+.search-option-item:hover + .seperator{
+  visibility: hidden;
+}
+
+.search-option-item label {
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+}
+.search-option-item input{
+  border: 0;
+  outline: 0;
+}
+
+.search-option-item span{
+  cursor: pointer;
+}
+.search-option-item span,
+.option-item1 input::placeholder {
+  font-size: 15px;
+}
+
+.option-item1 {
+  padding-left: 2rem;
+  gap: 0.3rem;
+}
+
+.option-item1 input {
+  border: none;
+  outline: none;
+}
+
+.option-item1:hover{
+  background-color:  rgb(228, 228, 228);
+  border-radius: 2rem;
+}
+
+.option-item4{
+  border-right-style: none;
+  gap: 0rem;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 0.4rem
+}
+
+.option-item4-child1{
+  display: flex;
+  flex-direction: column;
+}
+
+ .add-guest-block {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.search-btn {
+  background-color: var(--pink);
+  border: 0;
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.search-btn svg {
+  width: 22px;
+  height: 22px;
+  fill: #fff;
+}
+
+.signup-modal{
+  width: 100px;
+  height: 100px;
+  background-color: rebeccapurple;
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+
+.user-login-btn:hover .signup-modal{
+  display: block;
+}
+
+
