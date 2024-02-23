@@ -136,7 +136,8 @@ hr{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  padding-bottom: 0.5rem;
+  border-bottom: 1.5px solid #dedbdb;
 }
 
 .search-bar {
@@ -265,5 +266,7 @@ hr{
 .user-login-btn:hover .signup-modal{
   display: block;
 }
+
+
 
 
